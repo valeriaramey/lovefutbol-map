@@ -1,39 +1,50 @@
 [
  {
-    "name": "field at Bergen",
+    "name": "Bergen Field",
     "field_id": 1,
     "address": "328 Bergen Street",
-    "coordinates": [40.68307924267538, -73.9813966465522]
+    "coordinates": [40.68307924267538, -73.9813966465522],
+    "image": "/field1.jpg"
   },
   {
-    "name": "field at Bensonhurts",
+    "name": "Bensonhurts Field",
     "field_id": 2,
-    "address": "1938 78th street",
-    "coordinates": [40.61022768033515, -73.99460334655424]
+    "address": "328 Bergen Street",
+    "coordinates": [40.61022768033515, -73.99460334655424],
+    "image": "/field1.jpg",
+    "link": "https://google.com/"
   },
   {
-    "name": "field at Mexico",
+    "name": "Mexico City Field",
     "field_id": 3,
-    "address": "1938 78th street",
-    "coordinates": [19.417566710000152, -99.16506983154177]
+    "address": "328 Bergen Street",
+    "coordinates": [19.417566710000152, -99.16506983154177],
+    "image": "/field1.jpg",
+    "link": "https://google.com/"
   },
   {
-    "name": "field at Russia",
+    "name": "Russia Field",
     "field_id": 4,
-    "address": "1938 78th street",
-    "coordinates": [55.84255945199219, 37.48247112755923]
+    "address": "328 Bergen Street",
+    "coordinates": [55.84255945199219, 37.48247112755923],
+    "image": "/field1.jpg",
+    "link": "https://google.com/"
   },
 
    {
-    "name": "field at Brazil",
+    "name": "Brazil Field",
     "field_id": 5,
-    "address": "1938 78th street",
-    "coordinates": [-23.858189121623386, -46.262786746065935]
+    "address": "328 Bergen Street",
+    "coordinates": [-23.858189121623386, -46.262786746065935],
+    "image": "/field1.jpg",
+    "link": "https://google.com/"
   },
    {
-    "name": "field at Panama",
+    "name": "Panama field",
     "field_id": 6,
-    "address": "1938 78th street",
-    "coordinates": [30.22860498879171, -85.65139365077471]
+    "address": "328 Bergen Street",
+    "coordinates": [30.22860498879171, -85.65139365077471],
+    "image": "field1.jpg",
+    "link": "https://google.com/"
   }
 ]
