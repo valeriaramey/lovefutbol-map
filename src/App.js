@@ -3,13 +3,14 @@ import ReactMapGl, {Marker, Popup} from "react-map-gl"
 import fieldData from "./data/fields.json"
 
 
+
 function App() {
     const [viewport, setViewport] = useState({
       latitude: 40.68313619450496,
       longitude:-73.98128935812457,
       width: "100vw",
       height: "100vh",
-      zoom: 10
+      zoom: 3
     });
     const[selectedField, setSelectedField] = useState(null);
 
@@ -24,11 +25,8 @@ function App() {
       return () => {
         window.removeEventListener("keydown", listener);
       };
-    }, []);
+  }, []);
 
-    function handleClick(e) {
-      e.preventDefault();
-    }
 
     return (
      <div>
@@ -53,29 +51,27 @@ function App() {
               setSelectedField(field);
             }}
            >
-             <img src= "/ball.png" alt="field icon" />
+             <img src= "/pitch.jpg" alt="field icon" />
            </button>
           </Marker>
         ))}
+
 
         {selectedField ? (
           <Popup
             latitude={selectedField.coordinates[0]}
             longitude={selectedField.coordinates[1]}
-            onClose={() => {
+             onClose={() => {
               setSelectedField(null);
             }}
           >
             <div>
               <h2>{selectedField.name}</h2>
               <p>{selectedField.address}</p>
-              <img width={240} src={selectedField.image} />
-              <div onClick={handleClick}>
-                <a href="www.google.com">
-                  More
-                </a>
-                </div>
-              </div>
+              <a href={selectedField.link} target="_blank">
+                <img width={240} src={selectedField.image} />
+              </a>
+            </div>
           </Popup>
           ) : null}
       </ReactMapGl>
@@ -84,3 +80,4 @@ function App() {
 }
 
 export default App;
+
