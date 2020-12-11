@@ -26,6 +26,10 @@ function App() {
       };
     }, []);
 
+    function handleClick(e) {
+      e.preventDefault();
+    }
+
     return (
      <div>
       <ReactMapGl
@@ -66,6 +70,11 @@ function App() {
               <h2>{selectedField.name}</h2>
               <p>{selectedField.address}</p>
               <img width={240} src={selectedField.image} />
+              <div onClick={handleClick}>
+                <a href="www.google.com">
+                  More
+                </a>
+                </div>
               </div>
           </Popup>
           ) : null}
