@@ -1,18 +1,27 @@
 import React, { useState, useEffect } from 'react'
-import ReactMapGl, {Marker, Popup} from "react-map-gl"
+import ReactMapGl, {Marker, Popup, NavigationControl, FullscreenControl} from "react-map-gl"
 import fieldData from "./data/fields.json"
-
 
 
 function App() {
     const [viewport, setViewport] = useState({
-      latitude: 40.68313619450496,
-      longitude:-73.98128935812457,
+      latitude: 34.94030819947061,
+      longitude:-41.632647956063714,
       width: "100vw",
       height: "100vh",
-      zoom: 3
+      zoom: 1
     });
+
+
     const[selectedField, setSelectedField] = useState(null);
+
+    const navStyle = {
+          position: 'absolute',
+          top: 36,
+          left: 0,
+          padding: '10px'
+    };
+
 
     useEffect(() => {
       const listener = e => {
@@ -27,17 +36,22 @@ function App() {
       };
   }, []);
 
-
     return (
      <div>
       <ReactMapGl
         {...viewport}
         mapboxApiAccessToken="pk.eyJ1IjoidmFscmFtIiwiYSI6ImNrZGl6MmVzdjA5dzcycWxqZTBleGRsdGEifQ.UB5yez5jsQVEkrMajr2mog"
-        mapStyle="mapbox://styles/valram/ckf2tl39x01hi19jwu9e8alzp"
+        mapStyle="mapbox://styles/mapbox/satellite-streets-v11"
+
         onViewportChange={viewport => {
           setViewport(viewport);
        }}
        >
+
+       <div className="nav" style={navStyle}>
+          <NavigationControl />
+        </div>
+
         {fieldData.map((field) => (
           <Marker
             key={field.field_id}
@@ -51,7 +65,7 @@ function App() {
               setSelectedField(field);
             }}
            >
-             <img src= "/pitch.jpg" alt="field icon" />
+             <img src= "/ball.png" alt="field icon" />
            </button>
           </Marker>
         ))}
@@ -61,7 +75,8 @@ function App() {
           <Popup
             latitude={selectedField.coordinates[0]}
             longitude={selectedField.coordinates[1]}
-             onClose={() => {
+            closeOnClick={false}
+            onClose={() => {
               setSelectedField(null);
             }}
           >
