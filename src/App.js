@@ -3,6 +3,7 @@ import ReactMapGl, {Marker, Popup, NavigationControl, FullscreenControl} from "r
 import fieldData from "./data/fields.json"
 
 
+
 function App() {
     const [viewport, setViewport] = useState({
       latitude: 34.94030819947061,
@@ -58,21 +59,22 @@ function App() {
             latitude={field.coordinates[0]}
             longitude={field.coordinates[1]}
           >
-           <button
-             className="marker-btn"
-             onClick={ e => {
-              e.preventDefault();
-              setSelectedField(field);
-            }}
-           >
-             <img src= "/ball.png" alt="field icon" />
-           </button>
+             <button
+               className="marker-btn"
+               onClick={ e => {
+                e.preventDefault();
+                setSelectedField(field);
+              }}
+             >
+                {/* <img src= "/dot.png" alt="field icon" />*/}
+             </button>
           </Marker>
         ))}
 
 
         {selectedField ? (
           <Popup
+            className = "popup"
             latitude={selectedField.coordinates[0]}
             longitude={selectedField.coordinates[1]}
             closeOnClick={false}

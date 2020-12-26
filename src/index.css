@@ -13,13 +13,46 @@ code {
 }
 
 
+
 .marker-btn {
   background: none;
   border: none;
   cursor: pointer;
+  transition: 5s;
+
 }
 
 .marker-btn img {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
+}
+
+
+.popup .mapboxgl-popup-content {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+
+}
+
+.popup .mapboxgl-popup-content-wrapper {
+  padding: 50%;
+}
+
+
+.marker-btn {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-sizing:border-box;
+  width: 20px;
+  height: 20px;
+  color:black;
+  background: red;
+  border:solid 1px;
+  border-radius: 0 70% 70%;
+  box-shadow:0 0 2px #000;
+  cursor: pointer;
+  transform-origin:0 0;
+  transform: rotateZ(-135deg);
 }

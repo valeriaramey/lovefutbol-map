@@ -30,6 +30,25 @@
     "coordinates": [4.548768884357833, -74.12708342330008],
     "image": "https://images.squarespace-cdn.com/content/v1/57ddbe9b37c581c5129f1cdf/1544670859012-169RTPMOZ9OIKMYUIMBP/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/Guabal+5.jpg?format=750w",
     "link": "https://www.lovefutbol.org/guabal"
+  },
+
+   {
+    "name": "Tanner Duckrey",
+    "field_id": 5,
+    "address": "Philadelphia, United States",
+    "coordinates": [39.986271031636235, -75.15848343862031],
+    "image": "https://images.squarespace-cdn.com/content/v1/57ddbe9b37c581c5129f1cdf/1572921729225-6YPUYYZ0GUE3C9AYVKFD/ke17ZwdGBToddI8pDm48kFpNCHkBa5qfTaLKlm-vj9V7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ue11b74vZsC4PnzujR5XbMikRPeDpcGmfbm0ZOynmnwZj-68nTP2Koyjv9rCvd2cxQ/LVF001_DUCK_Inaug4_PR_PS_10.24.19.jpg?format=2500w",
+    "link": "https://www.lovefutbol.org/tanner-duckrey"
+  },
+
+  {
+    "name": "James Finnegan",
+    "field_id": 6,
+    "address": "Philadelphia, United States",
+    "coordinates": [39.91580237731724, -75.23242373068985],
+    "image": "https://images.squarespace-cdn.com/content/v1/57ddbe9b37c581c5129f1cdf/1572916592208-KQF54GXZR661L23RUA8M/ke17ZwdGBToddI8pDm48kB6N0s8PWtX2k_eW8krg04V7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1URWK2DJDpV27WG7FD5VZsfFVodF6E_6KI51EW1dNf095hdyjf10zfCEVHp52s13p8g/LVF001_FINN_Inaug52_Social_PS_10.26.19.jpg?format=2500w",
+    "link": "https://www.lovefutbol.org/james-finnegan"
   }
+
 
 ]
