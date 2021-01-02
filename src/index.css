@@ -23,8 +23,18 @@ code {
 }
 
 .marker-btn img {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-sizing:border-box;
+  color:black;
+  border:solid 1px;
+  border-radius: 100%;
+  cursor: pointer;
+  transform-origin:0 0;
+  transform: rotateZ(-135deg);
 }
 
 
@@ -40,19 +50,3 @@ code {
 }
 
 
-.marker-btn {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  box-sizing:border-box;
-  width: 20px;
-  height: 20px;
-  color:black;
-  background: red;
-  border:solid 1px;
-  border-radius: 0 70% 70%;
-  box-shadow:0 0 2px #000;
-  cursor: pointer;
-  transform-origin:0 0;
-  transform: rotateZ(-135deg);
-}

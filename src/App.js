@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import ReactMapGl, {Marker, Popup, NavigationControl, FullscreenControl} from "react-map-gl"
-import fieldData from "./data/fields.json"
+import React, { useState, useEffect} from 'react';
+import ReactMapGl, {Marker, Popup, NavigationControl, FullscreenControl} from "react-map-gl";
+import fieldData from "./data/fields.json";
+import Geocoder from 'react-mapbox-gl-geocoder';
+
 
 
 
@@ -12,6 +14,7 @@ function App() {
       height: "100vh",
       zoom: 1
     });
+
 
 
     const[selectedField, setSelectedField] = useState(null);
@@ -66,7 +69,7 @@ function App() {
                 setSelectedField(field);
               }}
              >
-                {/* <img src= "/dot.png" alt="field icon" />*/}
+             <img src= "/ball.png" alt="field icon"/>
              </button>
           </Marker>
         ))}
